@@ -2,8 +2,8 @@
 $host = 'localhost';
 $dbname = 'assuerplus';
 $username = 'root';
-$password = 'password';
-//$password = 'Danoux10&*';
+//$password = 'password';
+$password = 'Danoux10&*';
 
 try{
 	$bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8","$username","$password");
