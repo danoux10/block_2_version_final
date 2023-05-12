@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding:0;
+  box-shadow: none;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+ul{
+  list-style: none;
+}
+
+input[type="email"],input[type="password"],input[type="text"]{
+  padding: .2vw;
+}
+
+fieldset{
+  border-radius: 10px;
+}
+
+legend{
+  background: $light;
+  text-align: center;
+  border: 1px solid $dark;
+  @include borderNone;
+  border-radius:50px;
+}

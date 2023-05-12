@@ -1,0 +1,99 @@
+@media screen and (min-width: 378px) {
+  //link mobile btn
+  .btn{
+    padding: 1vh;
+  }
+
+  //link mobile header
+  header{
+    width:99.1vw;
+    nav{
+      #logo-header{
+        svg{
+          width:6vw;
+        }
+        h1{
+          font-size:4vw;
+        }
+      }
+      #btn-nav{
+        width:50%;
+        button{
+          font-size:3vw;
+        }
+      }
+    }
+  }
+
+  //link mobile main
+  main{
+    height:92.5vh;
+    #home-page{
+      #logo-home{
+        svg{
+          width:20vw;
+        }
+        h1{
+          font-size:10vw;
+        }
+      }
+      .btn{
+        font-size:5vw;
+      }
+    }
+    #login-form,#register-form,#deconnexion-form{
+      .btn-close{
+        width:25px;
+        height:25px;
+        position:absolute;
+        right:1rem;
+        top: .8rem;
+      }
+    }
+    #login-form{
+      width:80%;
+      fieldset{
+        height: 25vh;
+      }
+    }
+    #register-form{
+      width: 90%;
+      fieldset{
+        height:40vh;
+      }
+    }
+    #deconnexion-form{
+      width: 90%;
+      fieldset{
+        height:15vh;
+      }
+    }
+    #sinistre-content{
+      #form-info{
+        width:50%;
+        form{
+          fieldset{
+            width: 100%;
+            height:10vh;
+            .btn{
+              padding: .2vh;
+            }
+          }
+        }
+        #depanneur-content{
+          min-height: 8vh;
+          max-height: 60vh;
+        }
+      }
+      #picture-content{
+        width:50%;
+        min-height:20vh;
+        height:82vh;
+        img{
+          max-width:40%;
+          max-height:20%;
+        }
+      }
+    }
+  }
+}

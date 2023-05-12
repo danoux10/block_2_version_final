@@ -1,0 +1,242 @@
+.hidden{
+  display: none;
+}
+
+.btn{
+  border-radius:50px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid $dark;
+}
+
+//link btn
+//sublink header btn
+.btn-nav{
+  &:hover{
+    box-shadow:4px 4px 2px $medium;
+    background: none;
+  }
+
+  &.active{
+    background: $medium;
+  }
+}
+
+
+//sublink btn form
+
+.btn-valid{
+  background: rgba($valid,.5);
+  &:hover{
+    box-shadow: 2px 2px 2px $valid;
+  }
+}
+
+.btn-cancel{
+  background: rgba($cancel,.5);
+  &:hover{
+    box-shadow: 2px 2px 2px $cancel;
+  }
+}
+
+//link header
+header{
+  padding: 1vh 0;
+  border-bottom: 2px solid $dark;
+  margin-bottom: .5%;
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    #logo-header{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+    #btn-nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+//link main
+main{
+  position: relative;
+  #home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    @include center;
+    &.hidden{
+      display: none;
+    }
+    #logo-home{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .btn{
+      &:hover{
+        box-shadow:4px 4px 2px $medium;
+        background: none;
+      }
+      &.active{
+        background: $medium;
+      }
+    }
+  }
+  //link from register login deconnexion
+  #login-form,#register-form,#deconnexion-form{
+    @include center;
+    fieldset{
+      background: $light;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1vw;
+      legend{
+        text-align: center;
+        padding: .5vw;
+        border: 1px solid $dark;
+        @include borderNone;
+        border-radius:50px;
+      }
+      .btn-close{
+        cursor: pointer;
+        display: flex;
+        padding:0;
+      }
+      .response{
+        padding: .3rem 0;
+        border-radius:50px;
+        width: 100%;
+        text-align: center;
+        &.success{
+          background: $success;
+        }
+        &.error{
+          background: $error;
+          color: $light;
+        }
+      }
+      .element-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        label{
+          margin-right: .5vw;
+        }
+      }
+      .button-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        align-items: center;
+      }
+    }
+  }
+  //link sinistre content
+  #sinistre-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    &.hidden{
+      display: none;
+    }
+    #form-info{
+      display: flex;
+      margin-right: 1%;
+      flex-direction: column;
+      form{
+        display: flex;
+        justify-content: center;
+        fieldset{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+
+          legend{
+            padding: .5vh;
+          }
+
+          .form-element{
+            .btn-file{
+              padding: .5vh;
+              box-shadow: 2px 2px 2px $medium;
+            }
+
+            input[type="file"]{
+              display: none;
+            }
+          }
+          .button-content{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+          }
+        }
+      }
+      #depanneur-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-height: 50vh;
+        overflow:scroll;
+        @include customScrollbar;
+        legend{
+          padding: .5vh;
+        }
+        #view-depanneur{
+          border-bottom: 1px solid $dark;
+          margin: 1% 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .name{
+            display: inline-flex;
+          }
+          .address{
+            display: inline-flex;
+          }
+        }
+      }
+    }
+    #picture-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      overflow: scroll;
+      @include customScrollbar;
+      legend{
+        font-size:large;
+        padding: .5vh;
+      }
+    }
+  }
+  #map{
+    display: none;
+  }
+  #sinistre-response{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid $dark;
+    border-radius: 10px;
+    background: $light;
+    padding: 1rem;
+    display: block;
+    &.hidden{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@media screen and (min-width: 1280px) {
+  //link laptop header
+  header{
+    width:100vw;
+    nav{
+      #logo-header{
+        svg{
+          width: 2vw;
+        }
+        h1{
+          font-size:2vw;
+        }
+      }
+      #btn-nav{
+        button{
+          font-size:1vw;
+        }
+      }
+    }
+  }
+  //link laptop main
+  main{
+    height:92vh;
+    #home-page{
+      #logo-home{
+        svg{
+          width:15rem;
+        }
+        h1{
+          font-size:5vw;
+        }
+      }
+      .btn{
+        font-size:2vw;
+      }
+    }
+    #login-form,#register-form,#deconnexion-form{
+      .btn-close{
+        top: 2rem;
+      }
+    }
+    #login-form{
+      width:22.2%;
+      fieldset{
+        width:20vw;
+      }
+    }
+    #register-form{
+      width:25%;
+      fieldset{
+        height:35vh;
+      }
+    }
+    #deconnexion-form{
+      width: 20%;
+    }
+    #sinistre-content{
+      margin: 0 1%;
+      #form-info{
+        form{
+          width: 100%;
+          fieldset{
+            width: 15vw;
+          }
+        }
+        #depanneur-content{
+          margin-top: 1vh;
+        }
+      }
+      #pictures-content{
+        padding: .5vh;
+        width:80vw;
+        min-height: 20vh;
+        max-height: 90vh;
+      }
+    }
+  }
+}
+
